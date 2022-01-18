@@ -1,18 +1,37 @@
-# Шаблон отчёта (СПбПУ) [![Build Status](https://www.travis-ci.com/polytechnic-templates/report-template.svg?branch=master)](https://www.travis-ci.com/polytechnic-templates/report-template) [![Semantic Versions](https://img.shields.io/badge/%F0%9F%9A%80-semantic%20versions-informational.svg)](https://semver.org/)
-В этом проекте представлен шаблон отчёта по лабораторной или курсовой работе. Это форк https://github.com/kspt-templates/report, переделанный под меня. Может, и Вам будет удобнее.
+# Шаблон отчёта (ТвГТУ)
+В этом проекте представлен шаблон отчёта по лабораторной или курсовой работе. Это форк https://github.com/polytechnic-templates/report-template, переделанный под меня. Может, и Вам будет удобнее.
 
 **Важно!** Шаблон не идеален и соответствует не всем требованиям.
-Если консультант по нормконтролю или преподаватель высказал замечания к работе, составленной по данному шаблону, то можно смело [заводить issue](https://github.com/tiulpin/report-template/issues/new). Попробуем исправить.
+Если консультант по нормконтролю или преподаватель высказал замечания к работе, составленной по данному шаблону, то можно смело [заводить issue](https://github.com/andreymlv/xetex-template/issues/new). Попробуем исправить.
 
 Также можно отправлять Pull Request. 
 
-## Работа с шаблоном
-Рекомендуется использовать Overleaf. 
-В таком случае не придётся устанавливать пакеты TeX локально и разбираться в сборке документа вручную. 
-Использовать шаблон из галереи шаблонов Overleaf: [https://ru.overleaf.com/latex/templates/shablon-otchiota-spbpu/jzbtjhbjpfxg](https://ru.overleaf.com/latex/templates/shablon-otchiota-spbpu/jzbtjhbjpfxg)
+### Сборка локально
 
-#### Сборка локально
-Понадобится Docker. 
+Понадобится *nix система с Docker и wget.
+
+#### Автоматически
+
+Один раз надо скачать дополнительные файлы:
+
+```
+make install
+```
+
+Скомпилировать:
+
+```
+make
+```
+
+Можно очистить от всех файлов (включая pdf):
+
+```
+make clean
+```
+
+#### Ручками
+
 ```
 wget https://github.com/tiulpin/xelatex-docker/raw/master/.latexmkrc -O .latexmkrc
 wget https://github.com/tiulpin/xelatex-docker/raw/master/latexdockercmd.sh -O latexdockercmd.sh
