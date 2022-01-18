@@ -1,0 +1,18 @@
+dist: trusty
+services: docker
+branches:
+  only:
+  - master
+script: 
+  - wget https://github.com/polytechnic-templates/xelatex-docker/raw/master/latexdockercmd.sh -O latexdockercmd.sh
+  - wget https://github.com/polytechnic-templates/xelatex-docker/raw/master/.latexmkrc -O .latexmkrc
+  - chmod a+x latexdockercmd.sh
+  - ./latexdockercmd.sh latexmk -xelatex -shell-escape -cd -f -interaction=nonstopmode -pdf main.tex
+  - mv main.pdf report-template.pdf
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "report-template.pdf"
+  skip_cleanup: true
+  on:
+    tags: true
