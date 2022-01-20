@@ -3,7 +3,7 @@
 
 ### Сборка локально
 
-Понадобится *nix система с TeX Live и Tectonic.
+Понадобится *nix система с TeX Live, Tectonic, ghostscript.
 
 ```
 ./configure
