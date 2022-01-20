@@ -1,42 +1,14 @@
 # Шаблон отчёта (ТвГТУ)
-В этом проекте представлен шаблон отчёта по лабораторной или курсовой работе. Это форк https://github.com/polytechnic-templates/report-template, переделанный под меня. Может, и Вам будет удобнее.
-
-**Важно!** Шаблон не идеален и соответствует не всем требованиям.
-Если консультант по нормконтролю или преподаватель высказал замечания к работе, составленной по данному шаблону, то можно смело [заводить issue](https://github.com/andreymlv/xetex-template/issues/new). Попробуем исправить.
-
-Также можно отправлять Pull Request. 
+В этом проекте представлен шаблон отчёта по лабораторной или курсовой работе. Это fork https://github.com/polytechnic-templates/report-template, переделанный под меня. Может, и Вам будет удобнее.
 
 ### Сборка локально
 
-Понадобится *nix система с Docker и wget.
-
-#### Автоматически
-
-Один раз надо скачать дополнительные файлы:
+Понадобится *nix система с TeX Live и Tectonic.
 
 ```
-make install
-```
+./configure
 
-Скомпилировать:
-
-```
 make
-```
-
-Можно очистить от всех файлов (включая pdf):
-
-```
-make clean
-```
-
-#### Ручками
-
-```
-wget https://github.com/tiulpin/xelatex-docker/raw/master/.latexmkrc -O .latexmkrc
-wget https://github.com/tiulpin/xelatex-docker/raw/master/latexdockercmd.sh -O latexdockercmd.sh
-chmod a+x latexdockercmd.sh
-./latexdockercmd.sh latexmk -cd -f -interaction=nonstopmode -pdf main.tex
 ```
 
 ## Заполнение шаблона
