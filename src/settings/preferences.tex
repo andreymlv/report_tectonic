@@ -7,7 +7,7 @@
 	\renewcommand{\figurename}{Рисунок}%
 	\renewcommand{\partname}{Глава}
 	\renewcommand{\contentsname}{\centerline{Содержание}}
-	\renewcommand{\listingscaption}{Листинг}
+	\renewcommand{\lstlistingname}{Листинг}
 }
 
 % основной шрифт документа
@@ -30,13 +30,12 @@
 	pdfauthor={\studentname},
 	pdfsubject={\subject},
 	pdfcreator={\studentname},
-	pdfproducer={Overleaf},
+	pdfproducer={XeLaTeX},
 	pdfkeywords={\subject}
 }
 
 % настройка подсветки кода и окружения для листингов
-\usemintedstyle{colorful}
-\newenvironment{code}{\captionsetup{type=listing}}{}
+\newenvironment{code}{\captionsetup{type=lstlisting}}{}
 
 % шрифт для листингов с лигатурами
 \setmonofont{FiraCode-Regular.ttf}[
