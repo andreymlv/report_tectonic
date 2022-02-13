@@ -1,6 +1,6 @@
 [doc]
 name = 'xetex-template'
-bundle = 'https://data1.fullyjustified.net/tlextras-2020.0r0.tar'
+bundle = 'https://relay.fullyjustified.net/default_bundle.tar'
 
 [[output]]
 name = 'default'

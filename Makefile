@@ -1,7 +1,5 @@
 
-all:
-	make compile
-	make compress
+all: compile compress
 
 watch:
 	tectonic -X watch
@@ -10,7 +8,7 @@ clean:
 	rm -rf build/
 
 look:
-	zathura default.pdf &
+	zathura default.pdf --fork
 
 compile:
 	tectonic -X build

@@ -1,3 +1,5 @@
 #! /bin/sh
 
+set -xe
+
 mkdir -p build/default/settings build/default/templates
