@@ -9,6 +9,12 @@
 
 Понадобится *nix система с TeX Live, Tectonic, biber.
 
+Так же необходимо установить шрифты: 
+
+- http://downloads.sourceforge.net/project/cm-unicode/cm-unicode/0.7.0/cm-unicode-0.7.0-ttf.tar.xz
+- https://github.com/tonsky/FiraCode
+
+
 ```
 ./configure
 
