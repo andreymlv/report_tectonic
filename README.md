@@ -3,6 +3,8 @@
 Это fork https://github.com/polytechnic-templates/report-template, переделанный
 под меня. Может, и Вам будет удобнее.
 
+Пример итогово отчёта: https://cloud.ndrmlv.ru/share/report.pdf
+
 Для настройки стиля оформления библиографии: https://github.com/odomanov/biblatex-gost/tree/master/tex/latex/biblatex-gost/bbx
 
 ### Сборка локально
