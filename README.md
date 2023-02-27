@@ -3,9 +3,11 @@
 Это fork https://github.com/polytechnic-templates/report-template, переделанный
 под меня. Может, и Вам будет удобнее.
 
+Для настройки стиля оформления библиографии: https://github.com/odomanov/biblatex-gost/tree/master/tex/latex/biblatex-gost/bbx
+
 ### Сборка локально
 
-Понадобится *nix система с TeX Live, Tectonic, ghostscript.
+Понадобится *nix система с TeX Live, Tectonic, biber.
 
 ```
 ./configure
