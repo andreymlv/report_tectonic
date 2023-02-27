@@ -15,9 +15,17 @@
 \usepackage{lstfiracode}
 
 % библиография
-\bibliographystyle{templates/gost-numeric.bbx}
 \usepackage{csquotes}
-\usepackage[parentracker=true,hyperref=true,bibencoding=utf8,style=numeric-comp,language=auto,autolang=other,citestyle=gost-numeric,defernumbers=true,bibstyle=gost-numeric,sorting=ntvy]{biblatex}
+\usepackage[parentracker=true,
+  backend=biber,
+  hyperref=auto,
+  language=auto,
+  autolang=other,
+  citestyle=gost-numeric,
+  defernumbers=true,
+  bibstyle=gost-numeric,
+  sorting=ntvy
+]{biblatex}
 
 % установка полей
 \usepackage{geometry}
